@@ -1,5 +1,5 @@
 
-.INCLUDE "6507mapping.s"
+.INCLUDE "./lib/6507mapping.s"
 
 .BANK 0 .SLOT ROM
 .ORGA $f000           ; F000-FFFF  Cartridge Memory (4 Kbytes area)
