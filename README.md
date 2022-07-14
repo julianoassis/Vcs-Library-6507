@@ -2,7 +2,7 @@
 6507 ASM Library for WLA-DX Compiler.
 
 Compile test: 
-#make
+  #make
 
 Tip: 
-clear && make clean && make && hexdump -C game.rom
+  #clear && make clean && make && hexdump -C game.rom
