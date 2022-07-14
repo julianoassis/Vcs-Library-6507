@@ -7,4 +7,5 @@ Compile test:
 
 Tip:
 
-  `#clear && make clean && make && hexdump -C game.rom
+  `#clear && make clean && make && hexdump -C game.rom`
+  
