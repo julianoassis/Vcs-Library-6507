@@ -1,22 +1,17 @@
 
-CC = wla-6502
-CFLAGS = -o
-LD = wlalink
-LDFLAGS = -v -s
+SUBDIRS = src-00_compile_test
 
-SFILES = main.s
-IFILES = 
-OFILES = main.o
+.PHONY: subdirs $(SUBDIRS)
 
-all: $(OFILES) makefile
-	$(LD) $(LDFLAGS) linkfile game.rom
+subdirs: $(SUBDIRS)
 
-main.o: main.s
-	$(CC) $(CFLAGS) main.o main.s
+$(SUBDIRS):
+	$(MAKE) -C $@
+	mv $@/game.a26 bin/$(subst src-,"",$@).a26
 
-
-$(OFILES): $(HFILES)
-
-
-clean:
-	rm -f $(OFILES) core *~ game.rom game.sym
+.PHONY: cleanall
+cleanall:
+	for dir in $(SUBDIRS); do \
+		$(MAKE) clean -C $$dir; \
+	done
+	rm -f bin/*.a26

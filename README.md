@@ -5,11 +5,4 @@ Compile test:
 
 ```
 #make
-```  
-
-Tip:
-
 ```
-  #clear && make clean && make && hexdump -C game.rom
-```  
-  
