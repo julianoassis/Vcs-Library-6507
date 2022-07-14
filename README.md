@@ -4,5 +4,12 @@
 Compile test: 
 
 ```
-#make
+make
 ```
+
+Clear (src_dirs and bin)
+
+```
+make cleanall
+```
+
