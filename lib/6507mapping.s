@@ -1,6 +1,6 @@
 ; 
-;  Baseado na biblioteca vcs.h originalmente desenvolvido para o compilador Dasm, traduzido
-; para utilização nos compiladores wla-dx para processadores 6502(6507).
+; Based on the vcs.h library originally developed for the Dasm compiler, translated 
+; for use with the wla-dx compilers for 6502 (6507) processors.
 ;
 ; Author: https://github.com/julianoassis
 ; 
